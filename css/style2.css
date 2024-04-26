@@ -1,0 +1,215 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.navbar-left {
+    flex: 1;
+}
+
+.navbar-middle {
+    flex: 3;
+    text-align: center;
+}
+
+.navbar-middle ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar-middle li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.navbar-middle li:last-child {
+    margin-right: 0;
+}
+
+.navbar-middle a {
+    color: #1d1c1c;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar-right {
+    flex: 1;
+    text-align: right;
+}
+
+.logo {
+    width: 50px;
+    margin-left: 10px;
+}
+
+.social-logo {
+    width: 30px;
+    margin-left: 10px;
+}
+
+
+.hero-section {
+    /* padding: 20px; */
+    background-color: grey;
+}
+
+.hero-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero-image {
+    width: 100%;
+    /* max-width: 100%; */
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+}
+
+.overlay-text {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    padding: 5px 10px;
+    font-size: 16px;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    text-align: center;
+    margin: 10px;
+}
+
+.second-section {
+    background-color: #e0dada;
+    padding: 20px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    /* padding: 0 20px; */
+}
+
+h2 {
+    text-align: start;
+    margin-bottom: 30px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    width: 30%;
+    background-color: #e0dada;
+    /* border-radius: 8px; */
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+} 
+
+.card img {
+    width: 100%;
+    /* border-top-left-radius: 8px;
+    border-top-right-radius: 8px; */
+}
+
+/* .card-content { 
+     padding: 20px;   
+} */
+
+.card-content p {
+    margin-bottom: 15px;
+}
+
+.card-content h3 {
+    margin-top: 10px;
+    margin-bottom: 8px;
+}
+
+.card-content button {
+    display: block;
+    width: 50%;
+    padding: 10px 20px;
+    background-color: #00060b;
+    color: #fff;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+}
+
+.card:nth-child(2) .card-content button {
+    margin: auto; /* Align button in the middle */
+}
+
+.card:last-child .card-content button {
+    margin-left: auto; /* Align button at the end */
+}
+
+/* Media Queries for Responsive Design */
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-middle {
+        margin-top: 10px;
+    }
+
+    .navbar-middle ul {
+        text-align: center;
+    }
+
+    .navbar-middle li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .navbar-right {
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .hero-image {
+        max-width: 100%;
+    }
+
+    .card-container {
+        flex-direction: column;
+    }
+    
+    .card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
