@@ -65,7 +65,7 @@ body {
 
 .hero-section {
     /* padding: 20px; */
-    background-color: grey;
+    background-color: rgb(152, 149, 149);
 }
 
 .hero-card {
@@ -76,7 +76,7 @@ body {
 
 .hero-image {
     width: 100%;
-    /* max-width: 100%; */
+    max-width: 100%;
 }
 
 .hero-image img {
@@ -84,14 +84,26 @@ body {
     height: auto;
 }
 
-.overlay-text {
+/* .overlay-text {
     position: absolute;
     bottom: 10px;
     left: 10px;
     color: white;
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    background-color: rgba(0, 0, 0, 0.5);
     padding: 5px 10px;
     font-size: 16px;
+} */
+
+.hero-text {
+    position: absolute;
+    z-index: 1;
+    bottom: 10px; 
+    left: 50px;
+    color: white;
+    font-size: 40px;
+    padding: 5px 10px;
+    font-weight: bold;
+    background-color: black;
 }
 
 .hero-content {
@@ -111,6 +123,7 @@ body {
 
 .second-section {
     background-color: #e0dada;
+    margin: 0;
     padding: 20px 0;
 }
 
@@ -121,7 +134,10 @@ body {
 }
 
 h2 {
+    font-size: xx-large;
+    font-weight: bold;
     text-align: start;
+    margin-top: 20px;
     margin-bottom: 30px;
 }
 
